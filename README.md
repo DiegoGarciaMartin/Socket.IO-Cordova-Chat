@@ -67,31 +67,31 @@ An implementation of an client app for android using Cordova for the <a href="ht
 
 - Clones the repository.
 
-```shell
-$ git clone https://github.com/DiegoGarciaMartin/Socket.IO-Cordova-Chat
-```
+  ```
+  $ git clone https://github.com/DiegoGarciaMartin/Socket.IO-Cordova-Chat
+  ```
 
 - Edits the file '<i>src/www/js/chat.min.js</i>'. Search the text 'http://127.0.0.1:5555/', and replace the IP with the IP of the chat's back end.
 
 - Enter the directory.
 
-```sh
-$ cd "Socket.IO Cordova Chat/src"
-```
+  ```
+  $ cd "Socket.IO Cordova Chat/src"
+  ```
 
 - Checks if you have all requirements to build the app.
- 
-```sh
-$ cordova requirements
-```
+
+  ```
+  $ cordova requirements
+  ```
 
 - Execute a virtual AVD with android or connects your phone.
 
 - Execute app.
 
-```
-$ cordova run android
-```
+  ```
+  $ cordova run android
+  ```
 
 At this moment, you have a chat that can be use by web and with a phone with android. 
 
