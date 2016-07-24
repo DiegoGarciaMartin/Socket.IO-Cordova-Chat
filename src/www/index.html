@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socket.IO Chat</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/chat.min.css" />
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/socket.io.js"></script>
+    <script type="text/javascript" src="js/chat.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="content">
+            <!-- ======  HEADER  ====== -->
+            <header>
+                <table>
+                    <tr>
+                        <td class="chatRoomsButton">
+                            <button id="chatRoomsButton" type="button" class="btn btn-link">
+                                <span id="chatRoomsButtonIcon" class="fa fa-align-justify fa-2x textWhite"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <h1>Socket.IO Chat</h1>
+                        </td>
+                    </tr>
+                </table>
+            </header>
+            <!-- ======  CONTENT  ====== -->
+            <main>
+                <div class="container-fluid heightAll">
+                    <div class="row heightAll">
+                        <!-- ======  LISTS OF USERS AND ROOMS  ====== -->
+                        <div id="chatRooms" class="heightAll scrollVertical hidden-xs hidden-sm col-md-4 col-lg-3">
+                            <div class="titleListChat">
+                                <span id="username"></span>
+                            </div>
+                            <div id="titleRoom" class="titleListRoom">
+                                <h3>Rooms</h3>
+                            </div>
+                            <ul id="listRoom" class="listRoom"></ul>
+                            <div id="titleUsers" class="titleListRoom">
+                                <h3>Users</h3>
+                            </div>
+                            <ul id="listUsers" class="listRoom"></ul>
+                        </div>
+                        <!-- ======  CHAT  ====== -->
+                        <div id="chat" class="chat heightAll col-xs-12 col-sm-12 col-md-8 col-lg-9">
+                            <div class="titleListChat">
+                                <span id="usernameChat"></span>
+                            </div>
+                            <ul id="listChat" class="listChat scrollVertical"></ul>
+                            <div class="divSendMsg">
+                                <table>
+                                    <tr>
+                                        <td class="tdChatTextBox">
+                                            <input id="chatTextBox" type="text" name="chatTextBox" value="" maxlength="400" class="form-control chatTextBox" placeholder="Write a message" disabled>
+                                        </td>
+                                        <td>
+                                            <button id="chatSendButton" type="button" class="btn btn-link disabled">
+                                                <span class="fa fa-angle-right fa-2x chatSendButton"></span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- POPUP CONNECT -->
+    <div id="popConnect" class="modal fade" tabindex="-1" role="dialog">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog modal-sm vertical-align-center" role="document">
+                <div class="modal-content">
+                    <div id="popConnectContent" class="modal-body">
+                        <div>
+                            <input id="loginTextBox" type="text" name="loginTextBox" value="" maxlength="12" placeholder="Username" class="form-control" tabindex="-1">
+                        </div>
+                        <div style="padding-top: 5px;">
+                            <button id="btConnect" class="btn btn-success btn-block">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
