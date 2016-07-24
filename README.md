@@ -3,6 +3,7 @@
 An implementation of an client app for android using Cordova for the <a href="https://github.com/DiegoGarciaMartin/Socket.IO-Responsive-Chat">Socket.IO-Responsive-Chat</a>.
 
 
+<br>
 ### Screenshots
 <hr>
 
@@ -48,66 +49,56 @@ An implementation of an client app for android using Cordova for the <a href="ht
 <table>
 
 
+<br>
 ### Prerequisites
 <hr>
 
-<ul>
-	<li>
-		NodeJS v6.1.0+
-	</li>
-	<li>
-		Cordova v6.2.0+
-	</li>
-	<li>
-		Java JDK
-	</li>
-	<li>
-		Android SDK
-	</li>
-</ul>
+- NodeJS v6.1.0+
+- Cordova v6.2.0+
+- Java JDK
+- Android SDK
 	
 
+<br>
 ### How to run
 <hr>
 
-<div>
-	<ul>
-		<li>
-			<span>Runs the <a href="https://github.com/DiegoGarciaMartin/Socket.IO-Responsive-Chat">Socket.IO-Responsive-Chat</a>, it`s will be the chat's back end.</span>
-		</li>
-		<li>
-			<span>Clones the repository</span><br>
-			```sh
-			<span>$ git clone https://github.com/DiegoGarciaMartin/Socket.IO-Cordova-Chat</span>
-			```
-		</li>
-		<li>
-			<span>Edits the file <i>src/www/js/chat.min.js</i>. Search the text 'http://127.0.0.1:5555/', and replace the IP with the IP of the chat's back end.</span>
-		</li>
-		<li>
-			<span>Enter the directory</span><br>
-			<span>$ cd "Socket.IO Cordova Chat/src"</span>
-		</li>
-		<li>
-			<span>Checks if you have all requirements to build the app</span><br>
-			<span>$ cordova requirements</span>
-		</li>
-		<li>
-			<span>Execute a virtual AVD with android or connects your phone</span><br>
-		</li>
-		<li>
-			<span>Execute app</span><br>
-			<span>$ cordova run android</span>
-		</li>
-	</ul>
+ - Runs the <a href="https://github.com/DiegoGarciaMartin/Socket.IO-Responsive-Chat">Socket.IO-Responsive-Chat</a>, it`s will be the chat's back end.
 
-</div>
+- Clones the repository.
+
+```shell
+$ git clone https://github.com/DiegoGarciaMartin/Socket.IO-Cordova-Chat
+```
+
+- Edits the file '<i>src/www/js/chat.min.js</i>'. Search the text 'http://127.0.0.1:5555/', and replace the IP with the IP of the chat's back end.
+
+- Enter the directory.
+
+```sh
+$ cd "Socket.IO Cordova Chat/src"
+```
+
+- Checks if you have all requirements to build the app.
+ 
+```sh
+$ cordova requirements
+```
+
+- Execute a virtual AVD with android or connects your phone.
+
+- Execute app.
+
+```
+$ cordova run android
+```
 
 At this moment, you have a chat that can be use by web and with a phone with android. 
 
 I don´t test the app with Iphone but it should work.
 
 
+<br>
 ### License
 <hr>
 
